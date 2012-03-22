@@ -1,0 +1,67 @@
+// This import applies a global reset to any page that imports this stylesheet.
+@import "blueprint/reset";
+
+// To configure blueprint, edit the partials/base.sass file.
+@import "partials/base";
+
+// Import all the default blueprint modules so that we can access their mixins.
+@import "blueprint";
+
+// Combine the partials into a single screen stylesheet.
+@import "partials/page";
+@import "partials/form";
+@import "partials/two_col";
+
+// IE6 displays it!
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: black;
+  padding: 0.2em 0;
+}
+
+#container {
+  // remove this to hide the grid helper
+  @include showgrid();
+
+  header, footer {
+  }
+
+  aside {
+  }
+
+  section#content {
+  }
+}
+
+
+// **** styles for all the IEs and other special cases **** //
+
+html {
+  // ie6
+  &.lt-ie7 {
+
+  }
+
+  // ie6 + ie7
+  &.lt-ie8 {
+
+  }
+
+  // ie6 - ie8
+  &.lt-ie9 {
+
+  }
+
+  // special rules, if JavaScript is deactivated
+  &.no-js {
+
+  }
+
+  // special rules, if JavaScript is activated
+  &.js {
+    border: 1px solid red;
+  }
+}
+
+
