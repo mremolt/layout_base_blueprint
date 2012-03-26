@@ -23,6 +23,7 @@ nbproject
 *.sublime-workspace
 .guard-rack-development.pid
 stylesheets/*.css
+images/icons-*.png
 
 # Dreamweaver added files
 _notes
