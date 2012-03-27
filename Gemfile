@@ -2,6 +2,7 @@ source "http://rubygems.org"
 
 gem 'compass', '~> 0.12.1'
 gem 'rack'
+gem 'rake'
 
 gem "guard"
 gem "guard-bundler"

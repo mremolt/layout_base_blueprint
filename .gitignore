@@ -24,6 +24,7 @@ nbproject
 .guard-rack-development.pid
 stylesheets/*.css
 images/icons-*.png
+generated/*
 
 # Dreamweaver added files
 _notes
