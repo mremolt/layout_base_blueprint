@@ -12,6 +12,7 @@
 @import "partials/form";
 @import "partials/two_col";
 
+// Support for CSS sprites (just drop icons in images/icons)
 @import "partials/css_sprites";
 
 // IE6 displays it!
@@ -42,12 +43,12 @@
 html {
   // ie6
   &.lt-ie7 {
-
   }
 
   // ie6 + ie7
   &.lt-ie8 {
-
+    // blueprint IE hacks are for IE6 and 7
+    @include blueprint-ie(true);
   }
 
   // ie6 - ie8
@@ -62,7 +63,7 @@ html {
 
   // special rules, if JavaScript is activated
   &.js {
-    border: 1px solid red;
+    //border: 1px solid red;
   }
 }
 
